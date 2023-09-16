@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eman</title>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="">Home</a>
+            
+        </nav>
+        <nav>
+            <a href="#about">About Us</a>
+        </nav>
+        <nav>
+            Contact Us
+        </nav>
+    </header>
+    
+        <div class="paint">
+            <h1 id="titlee">Paintings ....</h1>
+            <section class="imgaess">
+                <div>
+                    <img class="img" src="/Website/assist/images.jpg" alt="art">
+                </div>
+                <div>
+                    <img class="img" src="/Website/assist/aart.webp" alt="art">
+                </div>
+                <div>
+                    <img class="img" src="/Website/assist/artt.jpg" alt="art">
+                </div>
+            </section>
+        </div>
+   
+    <main>
+       <div class="about" id="about">
+        <h1>About Us</h1>
+       
+            <p class="multi-line-paragraph"> We are here to support and strength your artistic talent in drawing,
+                You can show us your paintings, learn more about drawing and see our paintings </p>
+                <button>Start drawing</button>
+       
+        
+       </div>
+    
+    </main>
+    <footer>
+       
+    </footer>
+
+    <script>
+        // JavaScript to handle smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+    
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+    
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+    
+</body>
+
+</html>
