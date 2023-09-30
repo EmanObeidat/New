@@ -13,7 +13,7 @@
     <header>
         <nav>
             <a href="">Home</a>
-            
+
         </nav>
         <nav>
             <a href="#about">About Us</a>
@@ -22,57 +22,94 @@
             Contact Us
         </nav>
     </header>
+
     
-        <div class="paint">
-            <h1 id="titlee">Paintings ....</h1>
-            <section class="imgaess">
-                <div>
-                    <img class="img" src="/Website/assist/images.jpg" alt="art">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="https://static1.squarespace.com/static/53b839afe4b07ea978436183/53bbeeb2e4b095b6a428a13e/5fd2570b51740e23cce97919/1678505081247/traditional-food-around-the-world-Travlinmad.jpg?format=1500w" alt="Image 1">
+                    
                 </div>
-                <div>
-                    <img class="img" src="/Website/assist/aart.webp" alt="art">
+                <div class="slide">
+                    <img src="https://www.foodandwine.com/thmb/O2ZjV3L_cNcz258bkrDgrYPanD0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/What-Is-Chaos-Cooking-TikToks-Latest-Obsession-FT-BLOG0723-be130eb8cffe400eb13ccfbe47de733a.jpg" alt="Image 2">
                 </div>
-                <div>
-                    <img class="img" src="/Website/assist/artt.jpg" alt="art">
+                <div class="slide">
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" alt="Image 3">
                 </div>
-            </section>
-        </div>
-   
-    <main>
-       <div class="about" id="about">
-        <h1>About Us</h1>
-       
-            <p class="multi-line-paragraph"> We are here to support and strength your artistic talent in drawing,
-                You can show us your paintings, learn more about drawing and see our paintings </p>
-                <button>Start drawing</button>
-       
+                <div class="slide">
+                    <img src="https://anestisxasapotaverna.gr/wp-content/uploads/2021/12/ARTICLE-1.jpg" alt="Image 4">
+                </div>
+                <div class="slide">
+                    <img src="https://www.daysoftheyear.com/wp-content/uploads/national-fast-food-day.jpg" alt="Image 5">
+                </div>
+                <div class="slide">
+                    <img src="https://images.indianexpress.com/2023/09/trans-fats.jpg?w=414" alt="Image 5">
+                </div>
+                <div class="overlay"></div>
+               
+            </div>
+            <div class="fixed-text" >Yummy Food ...</div>
         
-       </div>
     
+    </div>
+
+    <main>
+
+        <h1 class="menu">Menu</h1>
+        <div class="selectdiv">
+            <label for="selectList">What type of food you want?</label>
+            <select id="selectList" name="selectList">
+                <option value="no choice">choose here</option>
+                <option value="Pastries">Pastries</option>
+                <option value="Rice">Rice</option>
+                <option value="Sauces">Sauces</option>
+                <option value="Meat">Meat</option>
+                <option value="chickens">chickens</option>
+
+            </select>
+        </div>
+
+
+       
+
+        <div id="card-container" class="card-row"></div>
+
+              
+       
+
+
+        <div class="about" id="about">
+            <h1>About Us</h1>
+
+            <p class="multi-line-paragraph"> This website serve the most delicious food you need ,
+                 you can choose anything you want and just order it
+                    it will be with your hand in a short time with a perfect taste </p>
+            
+
+
+        </div>
+
     </main>
     <footer>
-       
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="copyrightYear">2023</span> All rights reserved.</p>
+                <p><a href="privacy.html">Privacy Policy</a></p>
+                <p><a href="Emanobeidat210@gmail.com">Email</a> or send us here: 0797909835</p>
+            </div>
+        </div>
     </footer>
 
-    <script>
-        // JavaScript to handle smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-    
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-    
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
-    
+   
+    <script src="index.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+

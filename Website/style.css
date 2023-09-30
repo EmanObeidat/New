@@ -4,36 +4,59 @@ header {
     align-items: center;
     width: 100;
     height: 100px;
-    background-color: rgb(132, 145, 76);}
+    background: linear-gradient(to right, #4CAF50, #2196F3););
+}
 .img{
     width: 400px;
     height: 300px;
     position: relative;
     border-radius: 20px;
     margin: auto;
+    cursor: pointer;    
     
 }
-footer{
+
+
+.container {
+    max-width: 1200px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+footer {
+    background: linear-gradient(to right, #4CAF50, #2196F3); /* Gradient background */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.footer-content {
     display: flex;
     justify-content: space-between;
 }
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 nav{
 color: white;
 font-size: 20px;
+cursor: pointer;    
 }
 
-footer{
-    background-color: rgb(132, 145, 76);
-    margin-bottom: 0px;
-    height: 150px;
-}
-.paint{
-    background-color: rgb(132, 145, 76);
-    height: 300px;
-    display: block;
-    margin-bottom: 20%;
-    border: 1px solid rgb(56, 55, 55);
-}
+
+
 body{
     width: 100%;
     height: 100%;
@@ -47,8 +70,9 @@ body{
 #titlee{
     font-size: 100px;
     font-family: 'Times New Roman';
-    margin-left: 30%;
+    margin-left: 20%;
     color: white;
+    margin-top: 150px;
     /* margin-bottom: 30px; */
 }
 .multi-line-paragraph {
@@ -87,4 +111,137 @@ nav a {
 }
 .about button{
     margin-top: 20px;
+}
+
+#selectList {
+    width: 300px;
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+  }
+
+  .selectdiv{
+    margin: 12px;
+    font-size: large;
+  }
+
+
+
+  .card {
+    flex-basis: calc(33.33% - 30px); 
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    background-color: #fff;
+    height: 400px;
+  }
+ 
+  .card img {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .card h2 {
+    font-size: 1.9rem;
+    margin-top: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+
+
+.menu{
+    color: red;
+    font-size: 5rem;
+    margin-left: 40%;
+}
+
+
+
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 600px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.1s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Black overlay for the current slide */
+.slide.active {
+    position: relative;
+}
+
+.slide.active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.fixed-text {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: white; /* Text color */
+    padding: 10px 20px; 
+    font-size: 100px; 
+    z-index: 1; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay color */
+    display: none;
+}
+
+.slide:hover .overlay {
+    display: block; /* Show overlay on hover */
 }
